@@ -1,0 +1,182 @@
+
+body{
+    margin: 0;
+}
+
+
+.header{
+    background-color: black;
+    width: 100%;
+}
+
+.titulo{
+    font-family: cursive;
+    font-weight: 100;
+    text-align: center;
+    color:white;
+    margin: 0;
+
+    @media (max-width: 480px){
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    @media (min-width: 480px){
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    @media (min-width: 1280px){
+        padding: 30px;
+        font-size: 35px;
+    }
+
+}
+
+.nav{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.26);
+    height: 50px;
+}
+
+.btn{
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 2%;
+    padding: 7px;
+    #btnFinal{
+        margin-right: 0;
+    }
+}
+
+
+
+
+.section-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(252, 143, 0);
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    .div-flex{
+        width: 30%;
+        background-color: black;
+        
+        margin: 30px;
+        padding: auto;
+    }
+
+    @media (max-width: 480px){
+        height: 1000px;
+    }
+
+    @media (min-width: 480px){
+        height: 800px;
+    }
+
+    @media (min-width: 1280px){
+        height: 450px;
+    }
+}
+
+
+.section-grid{
+    display: grid;
+    gap: 20px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1000px; 
+    margin-top: 30px;
+    margin-left: 100px;
+
+    .head{
+        grid-area: head;
+        background-color: rgb(36, 36, 218);
+    }
+    .navbar{
+        grid-area: navbar;
+        background-color: rgb(73, 209, 148);
+    }
+    .main{
+        grid-area: main;
+        background-color: rgb(103, 103, 112);
+    }
+    .sidebar{
+        grid-area: sidebar;
+        background-color: rgb(137, 137, 197);
+    }
+    .footer{
+        grid-area: footer;
+        background-color: rgb(206, 78, 66);
+    }
+
+
+
+    @media (max-width: 480px){
+        grid-template:
+        "head" 200px
+        "navbar" 50px
+        "main" 100px
+        "sidebar" 50px
+        "footer" 80px;
+    }
+
+    @media (min-width: 480px){
+        grid-template:
+        "head navbar" 50px
+        "head navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px/
+         200px auto;
+    }
+
+}
+
+
+.div-flex{
+    width: 70%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:30px;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.head, .navbar, .main, .sidebar, .footer{
+    width: 70%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:30px;
+    border-radius: 10px;
+}
+
+
+
+.sectionP{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.div0, .div1, .div2, .div3{
+    width: 30%;
+    height: 20%;
+    background-color: rgb(86, 86, 212);
+    margin: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+
